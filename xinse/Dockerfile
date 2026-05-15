@@ -6,6 +6,6 @@ RUN apt-get update && apt-get install -y ffmpeg
 WORKDIR /app
 COPY . .
 
-RUN python3 m pip install -r requirements.txt
+RUN python3 -m pip install -r requirements.txt
 
 CMD ["python", "app.py"]
